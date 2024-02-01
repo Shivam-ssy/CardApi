@@ -11,7 +11,7 @@ const Modals = ({ name, imageUrl, url, details,onClose }) => {
                                              bottom:0,
                                              margin:"30px",
                                              background:"grey",
-                                             "border-radius":"10px">
+                                             "border-radius":"10px"}}>
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
