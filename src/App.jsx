@@ -3,30 +3,30 @@ import Mynav from "./component/Navbar";
 import Card from "./component/Card";
 import ShowContextProvider from "./context/ShowContextProvider";
 import Cardcontainer from "./component/Cardcontainer";
-
+import "./App.css"
 const MyComponent = () => {
-  const [apiData, setApiData] = useState([]);
-  // const [dt, setDt] = useState([]);
+  // const [apiData, setApiData] = useState([]);
+  // // const [dt, setDt] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          "https://api.tvmaze.com/search/shows?q=all"
-        );
-        if (response.ok) {
-          const data = await response.json();
-          setApiData(data);
-        } else {
-          console.error("Failed to fetch data:", response.status);
-        }
-      } catch (error) {
-        console.error("An error occurred while fetching data:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await fetch(
+  //         "https://api.tvmaze.com/search/shows?q=all"
+  //       );
+  //       if (response.ok) {
+  //         const data = await response.json();
+  //         setApiData(data);
+  //       } else {
+  //         console.error("Failed to fetch data:", response.status);
+  //       }
+  //     } catch (error) {
+  //       console.error("An error occurred while fetching data:", error);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   
   return (
