@@ -6,7 +6,12 @@ const Modals = ({ name, imageUrl, url, details,onClose }) => {
   console.log("modal us ");
   
   return (
-    <div>
+    <div role="dialog" tabindex="-1" style={{position:"fixed",
+                                             top:0,
+                                             bottom:0,
+                                             margin:"30px",
+                                             background:"grey",
+                                             "border-radius":"10px">
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
