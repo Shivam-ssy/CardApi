@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import ShowContext from "../context/ShowContext.js";
-import Modal from "./Modal.jsx";
+import Modals from "./Modal.jsx";
 import Card from "./Card.jsx";
 
 function Cardcontainer() {
@@ -37,7 +37,7 @@ function Cardcontainer() {
           </div>
         ))}
          {selectedShow && (
-        <Modal
+        <Modals
           name={selectedShow.name}
           imageUrl={selectedShow.image?.medium}
           url={selectedShow.url}

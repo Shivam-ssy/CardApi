@@ -2,7 +2,7 @@
 
 import React from "react";
 
-const Modal = ({ name, imageUrl, url, details,onClose }) => {
+const Modals = ({ name, imageUrl, url, details,onClose }) => {
   console.log("modal us ");
   
   return (
@@ -33,4 +33,4 @@ const Modal = ({ name, imageUrl, url, details,onClose }) => {
   );
 };
 
-export default Modal;
+export default Modals;
